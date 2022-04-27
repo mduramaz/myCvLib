@@ -8,5 +8,5 @@ find_package(CUDA REQUIRED)
 set(GENCODE -gencode=arch=compute_50,code=sm_50)
 cuda_add_library(CUDASampLib cudatest.cu  OPTIONS ${GENCODE} )
 
-add_executable(hello_cmake main.cpp)
+add_executable(hello_cmake src/main.cpp)
 target_link_libraries(hello_cmake CUDASampLib)
