@@ -1,6 +1,6 @@
 #include "include/cudatest.cuh"
 
-__global__ void testasd123()
+__global__ void cudatest()
 {
     printf("------------------------------------------------------------------------------ \n");
 }
@@ -10,7 +10,7 @@ void test()
 
     
 
-    testasd123<<<1,100>>>();
+    cudatest<<<1,100>>>();
     cudaDeviceSynchronize();
 
 }
