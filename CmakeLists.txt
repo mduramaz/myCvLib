@@ -4,9 +4,14 @@ cmake_minimum_required(VERSION 3.5)
 project(healloascmake)
 
 find_package(CUDA REQUIRED)
+include_directories(include "${CMAKE_CURRENT_BINARY_DIR}/include")
+
 
 set(GENCODE -gencode=arch=compute_50,code=sm_50)
-cuda_add_library(CUDASampLib cudatest.cu  OPTIONS ${GENCODE} )
+cuda_add_library(CUDASampLib src/cudatest.cu  OPTIONS ${GENCODE} )
 
-add_executable(hello_cmake src/main.cpp)
+
+
+add_executable(hello_cmake src/main.cpp
+                        src/image.cpp)
 target_link_libraries(hello_cmake CUDASampLib)

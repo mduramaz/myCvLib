@@ -9,7 +9,7 @@ The output was:
 .NET Framework için Microsoft (R) Build Engine sürüm 16.11.2+f32259642
 Telif Hakkı (C) Microsoft Corporation. Tüm hakları saklıdır.
 
-Oluşturma başlatıldı: 28.04.2022 18:22:47.
+Oluşturma başlatıldı: 1.05.2022 15:40:44.
 1 düğümünde "C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.vcxproj" projesi (varsayılan hedefler).
 PrepareForBuild:
   "Debug\" dizini oluşturuluyor.
@@ -35,7 +35,7 @@ Oluşturma başarılı oldu.
     0 Uyarı
     0 Hata
 
-Geçen Süre 00:00:01.34
+Geçen Süre 00:00:01.87
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -54,7 +54,7 @@ The output was:
 .NET Framework için Microsoft (R) Build Engine sürüm 16.11.2+f32259642
 Telif Hakkı (C) Microsoft Corporation. Tüm hakları saklıdır.
 
-Oluşturma başlatıldı: 28.04.2022 18:22:49.
+Oluşturma başlatıldı: 1.05.2022 15:40:46.
 1 düğümünde "C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" projesi (varsayılan hedefler).
 PrepareForBuild:
   "Debug\" dizini oluşturuluyor.
@@ -80,7 +80,7 @@ Oluşturma başarılı oldu.
     0 Uyarı
     0 Hata
 
-Geçen Süre 00:00:01.28
+Geçen Süre 00:00:01.18
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -92,28 +92,28 @@ The CXX compiler identification is MSVC, found in "C:/Users/mehmet/Desktop/myCvL
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_071c3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && .NET Framework için Microsoft (R) Build Engine sürüm 16.11.2+f32259642
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_d32dc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && .NET Framework için Microsoft (R) Build Engine sürüm 16.11.2+f32259642
 Telif Hakkı (C) Microsoft Corporation. Tüm hakları saklıdır.
 
   x64 için Microsoft (R) C/C++ İyileştirmeli Derleyicisi Sürüm 19.29.30143
   Telif Hakkı (C) Microsoft Corporation. Tüm hakları saklıdır.
   CMakeCCompilerABI.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "WIN32" /D "_WINDOWS" /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_071c3.dir\Debug\\" /Fd"cmTC_071c3.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
-  cmTC_071c3.vcxproj -> C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\CMakeTmp\Debug\cmTC_071c3.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "WIN32" /D "_WINDOWS" /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d32dc.dir\Debug\\" /Fd"cmTC_d32dc.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
+  cmTC_d32dc.vcxproj -> C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\CMakeTmp\Debug\cmTC_d32dc.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_51ef9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && .NET Framework için Microsoft (R) Build Engine sürüm 16.11.2+f32259642
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_d9b06.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && .NET Framework için Microsoft (R) Build Engine sürüm 16.11.2+f32259642
 Telif Hakkı (C) Microsoft Corporation. Tüm hakları saklıdır.
 
   x64 için Microsoft (R) C/C++ İyileştirmeli Derleyicisi Sürüm 19.29.30143
   Telif Hakkı (C) Microsoft Corporation. Tüm hakları saklıdır.
   CMakeCXXCompilerABI.cpp
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "WIN32" /D "_WINDOWS" /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_51ef9.dir\Debug\\" /Fd"cmTC_51ef9.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_51ef9.vcxproj -> C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\CMakeTmp\Debug\cmTC_51ef9.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "WIN32" /D "_WINDOWS" /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d9b06.dir\Debug\\" /Fd"cmTC_d9b06.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_d9b06.vcxproj -> C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\CMakeTmp\Debug\cmTC_d9b06.exe
 
 
 

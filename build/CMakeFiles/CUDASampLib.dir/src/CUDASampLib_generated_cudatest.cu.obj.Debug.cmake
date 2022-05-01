@@ -58,18 +58,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "C:/Program Files/CMake/bin/cmake.exe") # path
-set(source_file "C:/Users/mehmet/Desktop/myCvLibWs/cudatest.cu") # path
-set(NVCC_generated_dependency_file "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir//CUDASampLib_generated_cudatest.cu.obj.NVCC-depend") # path
-set(cmake_dependency_file "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir//CUDASampLib_generated_cudatest.cu.obj.depend") # path
+set(source_file "C:/Users/mehmet/Desktop/myCvLibWs/src/cudatest.cu") # path
+set(NVCC_generated_dependency_file "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir/src/CUDASampLib_generated_cudatest.cu.obj.NVCC-depend") # path
+set(cmake_dependency_file "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir/src/CUDASampLib_generated_cudatest.cu.obj.depend") # path
 set(CUDA_make2cmake "C:/Program Files/CMake/share/cmake-3.22/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "C:/Program Files/CMake/share/cmake-3.22/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir//$(Configuration)") # path
-set(generated_file_internal "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir//$(Configuration)/CUDASampLib_generated_cudatest.cu.obj") # path
-set(generated_cubin_file_internal "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir//$(Configuration)/CUDASampLib_generated_cudatest.cu.obj.cubin.txt") # path
+set(generated_file_path "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir/src/$(Configuration)") # path
+set(generated_file_internal "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir/src/$(Configuration)/CUDASampLib_generated_cudatest.cu.obj") # path
+set(generated_cubin_file_internal "C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir/src/$(Configuration)/CUDASampLib_generated_cudatest.cu.obj.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/bin/nvcc.exe") # path
 set(CUDA_NVCC_FLAGS  ;; -gencode=arch=compute_50,code=sm_50) # list
@@ -79,9 +79,9 @@ set(CUDA_NVCC_FLAGS_RELEASE  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64) # list
-set(CUDA_NVCC_INCLUDE_DIRS [==[C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/include;$<TARGET_PROPERTY:CUDASampLib,INCLUDE_DIRECTORIES>]==]) # list (needs to be in lua quotes to address backslashes)
+set(CUDA_NVCC_INCLUDE_DIRS [==[C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/include;C:/Users/mehmet/Desktop/myCvLibWs/include;C:/Users/mehmet/Desktop/myCvLibWs/build/include;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4/include]==]) # list (needs to be in lua quotes to address backslashes)
 string(REPLACE "\\" "/" CUDA_NVCC_INCLUDE_DIRS "${CUDA_NVCC_INCLUDE_DIRS}")
-set(CUDA_NVCC_COMPILE_DEFINITIONS [==[$<TARGET_PROPERTY:CUDASampLib,COMPILE_DEFINITIONS>]==]) # list (needs to be in lua quotes see #16510 ).
+set(CUDA_NVCC_COMPILE_DEFINITIONS [==[]==]) # list (needs to be in lua quotes see #16510 ).
 set(format_flag "-c") # string
 set(cuda_language_flag ) # list
 

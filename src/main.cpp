@@ -1,10 +1,11 @@
 #include <iostream>
-#include "include/cudatest.cuh"
+#include "cudatest.cuh"
+#include "image.h"
 
 int main(int argc, char *argv[])
-{
-    
-   test();
+{ 
+   mycv::Image image("C:\\Users\\mehmet\\Desktop\\myCvLibWs\\chess.bmp");
+   image.write("C:\\Users\\mehmet\\Desktop\\myCvLibWs\\chess3.bmp");
    
    return 0;
 }

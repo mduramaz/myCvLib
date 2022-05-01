@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mehmet\Desktop\myCvLibWs\src\cudatest.cu">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mehmet\Desktop\myCvLibWs\CmakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\mehmet\Desktop\myCvLibWs\build\CMakeFiles\CUDASampLib.dir\src\$(Configuration)\CUDASampLib_generated_cudatest.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{629F7064-B932-3A42-8FBB-FE2D44825CE5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CAB8030D-4EA8-3F9A-8210-5BA7E7F09E05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

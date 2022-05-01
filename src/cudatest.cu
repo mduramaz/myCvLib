@@ -1,4 +1,4 @@
-#include "include/cudatest.cuh"
+#include "cudatest.cuh"
 
 __global__ void cudatest()
 {
