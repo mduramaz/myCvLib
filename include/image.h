@@ -4,6 +4,8 @@
 #define BMP_COLOR_TABLE_SIZE    1024
 
 namespace mycv{
+	
+	typedef unsigned char pixel;
 
     class Image{
         public:
@@ -23,6 +25,19 @@ namespace mycv{
           imageWriter(imgName);
         }
         void imageWriter(const char *imgName);
+        
+        pixel getpixelRed(int i)const{return image[i];}
+        pixel getpixelGreen(int i)const{return image[i+1];}
+        pixel getpixelBlue(int i)const{return image[i+2];}
+
+        pixel* getpixel(int i)
+        {
+            pixel *pixelArray=new pixel[3];
+            pixelArray[0]=image[i];
+            pixelArray[1]=image[i+1];
+            pixelArray[2]=image[i+2];
+            return pixelArray;
+        }
     };
 }
 

@@ -1,0 +1,10 @@
+^C:\USERS\MEHMET\DESKTOP\MYCVLIBWS\BUILD\CMAKEFILES\C956BB83E70F8B790AE08CA575BF10C1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mehmet/Desktop/myCvLibWs -BC:/Users/mehmet/Desktop/myCvLibWs/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mehmet/Desktop/myCvLibWs/build/healloascmake.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
