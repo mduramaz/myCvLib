@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
    
    mycv::Image *image_gray=mycv::convertGrayScale(&image);
 
-   
+   image_gray->write("C:\\Users\\mehmet\\Desktop\\myCvLibWs\\chess2.bmp");
 
     
    /*    for(int i=0; i<10000; i++)

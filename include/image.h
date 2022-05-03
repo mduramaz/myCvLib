@@ -26,7 +26,7 @@ namespace mycv{
         Image(Image* image)
         {
           this->bitDepth=image->bitDepth;
-          this->image=new unsigned char[(image->width)*(image->height)]; //Image not copied. It's not need
+          this->image=new unsigned char[(image->width)*(image->height)*3]; //Image not copied. It's not need
           this->width=image->width;
           this->height=image->height;
           header=new unsigned char[BMP_HEADER_SIZE];
