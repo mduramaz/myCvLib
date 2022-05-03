@@ -87,6 +87,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\Users\mehmet\Desktop\myCvLibWs\include;C:\Users\mehmet\Desktop\myCvLibWs\build\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fopenmp</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -130,6 +131,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\Users\mehmet\Desktop\myCvLibWs\include;C:\Users\mehmet\Desktop\myCvLibWs\build\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fopenmp</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -173,6 +175,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\Users\mehmet\Desktop\myCvLibWs\include;C:\Users\mehmet\Desktop\myCvLibWs\build\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fopenmp</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -216,6 +219,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\Users\mehmet\Desktop\myCvLibWs\include;C:\Users\mehmet\Desktop\myCvLibWs\build\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -fopenmp</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -315,6 +319,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\main.cpp" />
     <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\image.cpp" />
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\colourSpace.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\mehmet\Desktop\myCvLibWs\build\ZERO_CHECK.vcxproj">

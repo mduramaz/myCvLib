@@ -3,6 +3,10 @@
 #define BMP_HEADER_SIZE         54
 #define BMP_COLOR_TABLE_SIZE    1024
 
+
+#include <iostream>
+using namespace std;
+
 namespace mycv{
 	
 	typedef unsigned char pixel;
@@ -15,7 +19,22 @@ namespace mycv{
         int height;
         unsigned char *header;
         unsigned char *colorTable;
-          
+
+
+        Image(int i){}
+        Image(){}
+        Image(Image* image)
+        {
+          this->bitDepth=image->bitDepth;
+          this->image=new unsigned char[(image->width)*(image->height)]; //Image not copied. It's not need
+          this->width=image->width;
+          this->height=image->height;
+          header=new unsigned char[BMP_HEADER_SIZE];
+          colorTable=new unsigned char[BMP_COLOR_TABLE_SIZE];
+          memcpy(this->header,image->header,BMP_HEADER_SIZE);
+          memcpy(this->colorTable,image->colorTable,BMP_COLOR_TABLE_SIZE);
+
+        }
        // Image(int _bitDepth,unsigned char* image,int width,int height,unsigned char *header,unsigned char *_colorTable):_bitDepth(_bitDepth),
           //   image(image),width(width),height(height),_header(_header),_colorTable(_colorTable){ }
         Image(const char *imgName){bitMapReader(imgName);}
