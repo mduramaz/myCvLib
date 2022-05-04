@@ -13,6 +13,15 @@
     <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\morphology.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\aritmeticOperators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\filterAlgoritm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\geometricOperations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\mehmet\Desktop\myCvLibWs\CmakeLists.txt" />

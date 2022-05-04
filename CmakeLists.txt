@@ -15,5 +15,8 @@ cuda_add_library(CUDASampLib src/cudatest.cu  OPTIONS ${GENCODE} )
 add_executable(hello_cmake src/main.cpp
                            src/image.cpp
                            src/colourSpace.cpp
-                           src/morphology.cpp)
+                           src/morphology.cpp
+                           src/aritmeticOperators.cpp
+                           src/filterAlgoritm.cpp
+                           src/geometricOperations.cpp)
 target_link_libraries(hello_cmake CUDASampLib)

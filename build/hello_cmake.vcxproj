@@ -321,6 +321,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\image.cpp" />
     <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\colourSpace.cpp" />
     <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\morphology.cpp" />
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\aritmeticOperators.cpp" />
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\filterAlgoritm.cpp" />
+    <ClCompile Include="C:\Users\mehmet\Desktop\myCvLibWs\src\geometricOperations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\mehmet\Desktop\myCvLibWs\build\ZERO_CHECK.vcxproj">
