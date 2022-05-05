@@ -3,7 +3,7 @@
 
 namespace mycv
 {
-       Image* addANumber(Image *input,int number)
+  /*     Image* addANumber(Image *input,int number)
    {
       Image* output=new Image(input);
       for(int i=0; i<(output->height)*(output->width)*3; i++)
@@ -159,5 +159,5 @@ namespace mycv
       return output;
    }
 
-
+     */
 }

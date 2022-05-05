@@ -26,17 +26,39 @@ namespace mycv{
         }
 
         width = *(int *)&header[18];
+      
         height = *(int *)&header[22]; 
         bitDepth = *(int *)&header[28];
-        
-        if(bitDepth <=8)
-        {
+          printf("%d %d",width,height); 
+          printf("%d",bitDepth);
+        if(bitDepth ==8)
+        {   
             fread(colorTable,sizeof(unsigned char),1024,streamIn);
         }
+        else if(bitDepth ==24){
+        fread(colorTable,sizeof(unsigned char),84,streamIn);}
 
         image=new unsigned char[width*height*3];
+
+        
+
+        pixel=new Pixel*[height];
+        for(int j=0; j<height; j++)
+            pixel[j]=(Pixel*)&image[3*j*width];
+        
+
         fread(image,sizeof(unsigned char),width*height*3,streamIn);
-    
+        
+       /*   for(int i=0; i<640*3; i++)
+               image[i]=0;
+       for(int i=0; i<height; i++)
+            for (int j = 0; j <width; j++)
+            {
+                printf("%c \n",pixel[i][j].R);
+            }
+              */
+
+
         fclose(streamIn);
 
     }
@@ -48,6 +70,9 @@ namespace mycv{
         if(bitDepth <=8)
         {
             fwrite(colorTable,sizeof(unsigned char),1024,fo);
+        }
+        else if(bitDepth ==24){
+        fwrite(colorTable,sizeof(unsigned char),84,fo);
         }
         fwrite(image,sizeof(unsigned char),width*height*3, fo);
         fclose(fo);
