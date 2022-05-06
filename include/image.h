@@ -16,6 +16,7 @@ namespace mycv{
    unsigned char B;
   };
   
+  
 
 
     class Image{
@@ -34,14 +35,21 @@ namespace mycv{
         Image(Image* image)
         {
           this->bitDepth=image->bitDepth;
-          this->image=new unsigned char[(image->width)*(image->height)*3];
-
-          pixel=new Pixel*[height];
-          for(int i=0; i<height; i++)
-              pixel[i]=(Pixel*)&image[3*i*width];
-
+          printf("\n%d\n", this->bitDepth);
           this->width=image->width;
           this->height=image->height;
+          this->image=new unsigned char[(image->width)*(image->height)*3];
+
+        /*
+         pixel=new Pixel*[height];
+         for(int j=0; j<height; j++){
+             pixel[j]=(Pixel*)&this->image[3*j*width];
+         }
+          */
+          pixel=new Pixel*[height];
+          for(int j=0; j<height; j++)
+              pixel[j]=new Pixel[width];
+              
           header=new unsigned char[BMP_HEADER_SIZE];
           colorTable=new unsigned char[BMP_COLOR_TABLE_SIZE];
           memcpy(this->header,image->header,BMP_HEADER_SIZE);
@@ -79,30 +87,37 @@ namespace mycv{
 
         void setHearder(int height,int width)
         {
+         
           this->height=height;
           test.tamsayi=height;
-          header[18]=test.t[0];
-          header[19]=test.t[1];
-          header[20]=test.t[2];
-          header[21]=test.t[3];
-
-          this->width=width;
-          test.tamsayi=width;
           header[22]=test.t[0];
           header[23]=test.t[1];
           header[24]=test.t[2];
           header[25]=test.t[3];
 
-          for(int i=0; i<height; i++)
-              delete pixel[i];
-          delete* pixel;
-      
-          pixel=new Pixel*[height];
-          for(int i=0; i<height; i++)
-              pixel[i]=(Pixel*)&image[3*i*width];
+          this->width=width;
+          test.tamsayi=width;
+          header[18]=test.t[0];
+          header[19]=test.t[1];
+          header[20]=test.t[2];
+          header[21]=test.t[3];
 
+          delete this->image;
+          
+          this->image=new unsigned char[(width)*(height)*3];
+
+          pixel=new Pixel*[height];
+          for(int j=0; j<height; j++)
+              pixel[j]=new Pixel[width];
 
         }
+
+
+        Pixel* operator[](int i)
+        {
+          return pixel[i];
+        }
+
     };
 }
 
