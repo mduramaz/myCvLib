@@ -4,11 +4,15 @@
  
 
 #include "geometricOperations.h"
+#include "filterAlgoritm.h"
 
 int main(int argc, char *argv[])
 { 
    mycv::Image *image=new mycv::Image("C:\\Users\\mehmet\\Desktop\\myCvLibWs\\chess.bmp");
-   mycv::Image *image_gray=mycv::setRotation180(image);
+   double Gkernel[2]={11,11};
+   double GSigma=2;
+   mycv::Image *image_gray=mycv::gaussianNoise(image,Gkernel,GSigma);
+
    printf("%d",image->height);
    
     //mycv::Image *image_gray=mycv::setRotation90(image);

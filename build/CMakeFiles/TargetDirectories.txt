@@ -1,4 +1,0 @@
-C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/CUDASampLib.dir
-C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/hello_cmake.dir
-C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/mehmet/Desktop/myCvLibWs/build/CMakeFiles/ZERO_CHECK.dir

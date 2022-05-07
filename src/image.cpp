@@ -35,7 +35,7 @@ namespace mycv{
             fread(colorTable,sizeof(unsigned char),1024,streamIn);
         }
         else if(bitDepth ==24){
-        // fread(colorTable,sizeof(unsigned char),3,streamIn);
+          // fread(colorTable,sizeof(unsigned char),2,streamIn);
        }
 
         image=new unsigned char[width*height*3];
@@ -71,7 +71,7 @@ namespace mycv{
             fwrite(colorTable,sizeof(unsigned char),1024,fo);
         }
         else if(bitDepth ==24){
-        // fwrite(colorTable,sizeof(unsigned char),3,fo);
+          // fwrite(colorTable,sizeof(unsigned char),100,fo);
         }
         for(int i=0; i<height; i++)
            for(int j=0; j<width; j++)
